@@ -1,0 +1,12 @@
+main{
+  width: $width-100per;
+  height: $height-vh;
+  @include flex(center,center);
+    .cd{
+      width: $wrap-4;
+      text-align: center;
+        img{
+          width: 50%;
+        }
+    }
+}
