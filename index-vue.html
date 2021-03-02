@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="dist/app.css">
 </head>
 <body>
+  <div class="cd" v-for = "disco in dischi">
+    <img :src="disco.img" alt="immagine">
+    <h3 class="titolo"> {{ disco.titolo }}</h3>
+    <h4 class="autore"> {{ disco.autore }} </h4>
+    <h5 class="anno"> {{ disco.anno }} </h5>
+  </div>
 
 
   <script src="src/app.js" charset="utf-8"></script>
